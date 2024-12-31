@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="MyTestSuite">
+
+    <test name="SpecificTests">
+        <classes>
+            <class name="tests.l1f21bsse0491" >
+                    <methods>
+                                   <include name="cafeTest"/>
+                    </methods>
+
+            </class>
+        </classes>
+
+    </test>
+
+
+</suite>
