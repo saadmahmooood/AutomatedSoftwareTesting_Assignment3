@@ -8,16 +8,16 @@ import org.openqa.selenium.support.PageFactory;
 public class CafePage_L1F21BSSE0491 {
 WebDriver driver;
 
-    @FindBy(xpath = "//*[@id=\"ProductGridContainer\"]//li[4]/a")
+    @FindBy(xpath = "//a[normalize-space()='4']")
     public WebElement fourthPage; //PageFactory ise ByFind to sore web elemnt instead of FindEDlement
 
-    @FindBy(xpath = "//*[@id=\"product-grid\"]/li[1]/div/div[1]/div/h3/a")
+    @FindBy(xpath = "//a[normalize-space()='Jalapeno Loaded Fries']")
     public WebElement loadedFries;
 
-    @FindBy(xpath = "//*[@id=\"ProductInfo-template--14216933965914__main\"]/div[4]/quantity-input/button[2]")
+    @FindBy(xpath = "//button[@name='plus']")
     public WebElement addBtn;
 
-    @FindBy(xpath = "//*[@id=\"product-form-template--14216933965914__main\"]/div/button")
+    @FindBy(xpath = "//span[normalize-space()='Add to cart']")
     public WebElement addCart;
 
 

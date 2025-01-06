@@ -4,6 +4,7 @@ import base.BaseTest;
 import config.ConfigReader;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
+import pages.FreshPage_L1F21BSSE0452;
 import pages.FrozenPage_L1F21BSSE0395;
 
 /*
@@ -24,7 +25,7 @@ public class l1f21bsse0452 extends BaseTest{
     public void freshTest() throws InterruptedException{
 
         // Initialize the FrozenPage object
-        FrozenPage_L1F21BSSE0395 frozen = new FrozenPage_L1F21BSSE0395(driver);
+        FreshPage_L1F21BSSE0452 fresh = new FreshPage_L1F21BSSE0452(driver);
 
         // Maximize the browser window
         driver.manage().window().maximize();
@@ -41,23 +42,23 @@ public class l1f21bsse0452 extends BaseTest{
 
         // Scroll to the "banana Page" section and click on it
         Thread.sleep(Long.parseLong(ConfigReader.getProperty("wait_time")));
-        actions.moveToElement(frozen.blueberry).perform();
-        frozen.blueberry.click();
+        actions.moveToElement(fresh.ginger).perform();
+        fresh.ginger.click();
 
         // Scroll to the "Add" button and click it multiple times (6 times in this case)
-        actions.moveToElement(frozen.addBtn).perform();
+        actions.moveToElement(fresh.addBtn).perform();
         for (int i = 0; i < Integer.parseInt(ConfigReader.getProperty("loop")); i++) {
-            frozen.addBtn.click();
+            fresh.addBtn.click();
         }
 
         // Wait for 3 seconds to allow for any visual confirmation
         Thread.sleep(Long.parseLong(ConfigReader.getProperty("wait_time")));
 
         // Buy the item to the cart
-        frozen.buyBtn.click();
+        fresh.buyBtn.click();
 
         // Enter value into the email feilds
-        actions.moveToElement(frozen.inputFeild).sendKeys("kamransajjad@gmail.com").perform();
+        actions.moveToElement(fresh.inputFeild).sendKeys("kamransajjad@gmail.com").perform();
 
         Thread.sleep(Long.parseLong(ConfigReader.getProperty("wait_time")));
 

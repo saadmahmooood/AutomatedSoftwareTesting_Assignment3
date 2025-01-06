@@ -23,6 +23,18 @@
 
             </methods>
             </class>
+            <class name="tests.l1f21bsse0492" >
+                <methods>
+                    <include name="bakeryTest"/>
+
+                </methods>
+            </class>
+            <class name="tests.l1f21bsse0507" >
+                <methods>
+                    <include name="pantryTest"/>
+
+                </methods>
+            </class>
         </classes>
 
     </test>

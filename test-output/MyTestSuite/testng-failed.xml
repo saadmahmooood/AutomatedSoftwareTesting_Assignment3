@@ -3,13 +3,13 @@
 <suite name="Failed suite [MyTestSuite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="SpecificTests(failed)">
     <classes>
-      <class name="tests.l1f21bsse0491">
+      <class name="tests.l1f21bsse0452">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="cafeTest"/>
+          <include name="freshTest"/>
         </methods>
-      </class> <!-- tests.l1f21bsse0491 -->
+      </class> <!-- tests.l1f21bsse0452 -->
     </classes>
   </test> <!-- SpecificTests(failed) -->
 </suite> <!-- Failed suite [MyTestSuite] -->
