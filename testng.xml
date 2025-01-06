@@ -6,8 +6,22 @@
             <class name="tests.l1f21bsse0491" >
                     <methods>
                                    <include name="cafeTest"/>
+
                     </methods>
 
+            </class>
+            <class name="tests.l1f21bsse0395" >
+                <methods>
+                    <include name="FrozenTest"/>
+
+                </methods>
+
+            </class>
+            <class name="tests.l1f21bsse0452" >
+            <methods>
+                <include name="freshTest"/>
+
+            </methods>
             </class>
         </classes>
 

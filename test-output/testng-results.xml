@@ -1,21 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-31T21:07:10 PKT" name="MyTestSuite" finished-at="2024-12-31T21:07:30 PKT" duration-ms="19147">
+  <suite started-at="2025-01-06T07:09:14 PKT" name="MyTestSuite" finished-at="2025-01-06T07:11:38 PKT" duration-ms="144607">
     <groups>
     </groups>
-    <test started-at="2024-12-31T21:07:10 PKT" name="SpecificTests" finished-at="2024-12-31T21:07:30 PKT" duration-ms="19147">
-      <class name="tests.l1f21bsse0491">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.l1f21bsse0491@6069db50]" started-at="2024-12-31T21:07:11 PKT" name="setUp" finished-at="2024-12-31T21:07:16 PKT" duration-ms="5234" status="PASS">
+    <test started-at="2025-01-06T07:09:14 PKT" name="SpecificTests" finished-at="2025-01-06T07:11:38 PKT" duration-ms="144607">
+      <class name="tests.l1f21bsse0452">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.l1f21bsse0452@54d9d12d]" started-at="2025-01-06T07:10:46 PKT" name="setUp" finished-at="2025-01-06T07:10:49 PKT" duration-ms="3216" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="cafeTest()[pri:0, instance:tests.l1f21bsse0491@6069db50]" started-at="2024-12-31T21:07:16 PKT" name="cafeTest" finished-at="2024-12-31T21:07:29 PKT" duration-ms="13450" status="PASS">
+        <test-method signature="freshTest()[pri:0, instance:tests.l1f21bsse0452@54d9d12d]" started-at="2025-01-06T07:10:49 PKT" name="freshTest" finished-at="2025-01-06T07:11:38 PKT" duration-ms="49162" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- freshTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.l1f21bsse0452@54d9d12d]" started-at="2025-01-06T07:11:38 PKT" name="tearDown" finished-at="2025-01-06T07:11:38 PKT" duration-ms="382" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.l1f21bsse0452 -->
+      <class name="tests.l1f21bsse0395">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.l1f21bsse0395@7c7a06ec]" started-at="2025-01-06T07:09:31 PKT" name="setUp" finished-at="2025-01-06T07:09:35 PKT" duration-ms="3655" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="FrozenTest()[pri:0, instance:tests.l1f21bsse0395@7c7a06ec]" started-at="2025-01-06T07:09:35 PKT" name="FrozenTest" finished-at="2025-01-06T07:10:45 PKT" duration-ms="70182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FrozenTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.l1f21bsse0395@7c7a06ec]" started-at="2025-01-06T07:10:45 PKT" name="tearDown" finished-at="2025-01-06T07:10:46 PKT" duration-ms="483" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.l1f21bsse0395 -->
+      <class name="tests.l1f21bsse0491">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.l1f21bsse0491@77fbd92c]" started-at="2025-01-06T07:09:14 PKT" name="setUp" finished-at="2025-01-06T07:09:20 PKT" duration-ms="5783" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="cafeTest()[pri:0, instance:tests.l1f21bsse0491@77fbd92c]" started-at="2025-01-06T07:09:20 PKT" name="cafeTest" finished-at="2025-01-06T07:09:31 PKT" duration-ms="11266" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cafeTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.l1f21bsse0491@6069db50]" started-at="2024-12-31T21:07:29 PKT" name="tearDown" finished-at="2024-12-31T21:07:30 PKT" duration-ms="389" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.l1f21bsse0491@77fbd92c]" started-at="2025-01-06T07:09:31 PKT" name="tearDown" finished-at="2025-01-06T07:09:31 PKT" duration-ms="380" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

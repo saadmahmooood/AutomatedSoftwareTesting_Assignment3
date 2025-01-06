@@ -15,8 +15,7 @@ import java.time.Duration;
  * Description:
  * - This test navigates to the Cafe page using a URL provided in the configuration.
  * - It interacts with the page to select a specific item ("Loaded Fries").
- * - The item is added to the cart multiple times (4 in this case).
- * - Finally, the test verifies that the item is added to the cart successfully.
+ * - The item is added to the cart multiple times (5 in this case).
  */
 public class l1f21bsse0491 extends BaseTest {
 
@@ -26,7 +25,7 @@ public class l1f21bsse0491 extends BaseTest {
         CafePage_L1F21BSSE0491 cafePage = new CafePage_L1F21BSSE0491(driver);
 
         // Maximize the browser window
-        driver.manage().window().maximize();
+        //driver.manage().window().maximize();
 
         // Create an Actions object for advanced interactions
         Actions actions = new Actions(driver);
@@ -45,17 +44,17 @@ public class l1f21bsse0491 extends BaseTest {
 
         // Scroll to the "Add" button and click it multiple times (4 times in this case)
         actions.moveToElement(cafePage.addBtn).perform();
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < Integer.parseInt(ConfigReader.getProperty("loop")); i++) {
             cafePage.addBtn.click();
         }
 
         // Wait for 2 seconds to allow for any visual confirmation (not recommended for production)
-        Thread.sleep(2000);
+        Thread.sleep(Long.parseLong(ConfigReader.getProperty("wait_time")));
 
         // Add the item to the cart
         cafePage.addCart.click();
 
         // Wait for 3 seconds to ensure the item is added to the cart
-        Thread.sleep(3000);
+        Thread.sleep(Long.parseLong(ConfigReader.getProperty("wait_time")));
     }
 }

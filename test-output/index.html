@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +103,17 @@
                     <div class="method-list-content passed suite-MyTestSuite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="tests.l1f21bsse0395" class="method navigator-link" hash-for-method="FrozenTest">FrozenTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-MyTestSuite" title="tests.l1f21bsse0491" class="method navigator-link" hash-for-method="cafeTest">cafeTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="tests.l1f21bsse0452" class="method navigator-link" hash-for-method="freshTest">freshTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-MyTestSuite -->
@@ -121,6 +131,21 @@
           <div class="suite-MyTestSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">tests.l1f21bsse0452</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="freshTest">
+                  </a> <!-- freshTest -->
+                  <span class="method-name">freshTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MyTestSuite-class-passed -->
+          <div class="suite-MyTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">tests.l1f21bsse0491</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -129,6 +154,21 @@
                   <a name="cafeTest">
                   </a> <!-- cafeTest -->
                   <span class="method-name">cafeTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MyTestSuite-class-passed -->
+          <div class="suite-MyTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.l1f21bsse0395</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="FrozenTest">
+                  </a> <!-- FrozenTest -->
+                  <span class="method-name">FrozenTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -150,6 +190,16 @@
           &lt;include name=&quot;cafeTest&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- tests.l1f21bsse0491 --&gt;
+      &lt;class name=&quot;tests.l1f21bsse0395&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;FrozenTest&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- tests.l1f21bsse0395 --&gt;
+      &lt;class name=&quot;tests.l1f21bsse0452&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;freshTest&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- tests.l1f21bsse0452 --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- SpecificTests --&gt;
 &lt;/suite&gt; &lt;!-- MyTestSuite --&gt;
@@ -163,7 +213,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">SpecificTests (1 class)</span>
+                <span class="test-name">SpecificTests (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -189,16 +239,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'cafeTest')
-data.setCell(0, 2, 'tests.l1f21bsse0491')
-data.setCell(0, 3, 13450);
+data.setCell(0, 1, 'FrozenTest')
+data.setCell(0, 2, 'tests.l1f21bsse0395')
+data.setCell(0, 3, 70182);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'freshTest')
+data.setCell(1, 2, 'tests.l1f21bsse0452')
+data.setCell(1, 3, 49162);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'cafeTest')
+data.setCell(2, 2, 'tests.l1f21bsse0491')
+data.setCell(2, 3, 11266);
 window.suiteTableData['MyTestSuite']= { tableData: data, tableDiv: 'times-div-MyTestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-MyTestSuite">
               </div> <!-- times-div-MyTestSuite -->
             </div> <!-- times-div -->
@@ -231,11 +289,41 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">cafeTest</span>
-                <span class="method-start">5235 ms</span>
+                <span class="method-start">5789 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">18695 ms</span>
+                <span class="method-start">17064 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.l1f21bsse0395</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">17449 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">FrozenTest</span>
+                <span class="method-start">21104 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">91293 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.l1f21bsse0452</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">91779 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">freshTest</span>
+                <span class="method-start">94996 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">144160 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

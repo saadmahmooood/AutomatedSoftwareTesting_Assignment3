@@ -9,7 +9,7 @@ public class CafePage_L1F21BSSE0491 {
 WebDriver driver;
 
     @FindBy(xpath = "//*[@id=\"ProductGridContainer\"]//li[4]/a")
-    public WebElement fourthPage;
+    public WebElement fourthPage; //PageFactory ise ByFind to sore web elemnt instead of FindEDlement
 
     @FindBy(xpath = "//*[@id=\"product-grid\"]/li[1]/div/div[1]/div/h3/a")
     public WebElement loadedFries;
